@@ -40,9 +40,15 @@ public class Main {
 		operators = new Operator[O];
 
 		//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
-		
+		PrintStream outstream1;
+		try {
+			outstream1 = new PrintStream(outFile);
+		}catch(FileNotFoundException e2) {
+			e2.printStackTrace();
+			return;
+		}
 
 		//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
-	} 
+	}
 }
 
