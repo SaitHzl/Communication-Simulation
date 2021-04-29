@@ -17,6 +17,7 @@ public class Customer {
 		limitingAmount = bill.getLimitingAmount(); 
 		
 	}
+	//Actions that a customer can take
 	void talk(int minute, Customer other) {
 		
 		
@@ -28,6 +29,12 @@ public class Customer {
 	void connection(double amount) {
 		
 	}
+	
+	//getter method for age
+	int getAge() {
+		return age;
+	}
+	
 	//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 }
 

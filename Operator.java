@@ -16,7 +16,7 @@ public class Operator {
 		this.discountRate = discountRate;
 	}
 	double caculateTalkingCost(int minute, Customer customer) {
-		
+		return minute;
 	}
 	double calculateNetworkCost(double amount) {
 		
