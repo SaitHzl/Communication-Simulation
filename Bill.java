@@ -6,6 +6,7 @@ public class Bill {
 	//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 	private double limitingAmount;
 	private double currentDebt;
+	double totalMoneySpent;
 	public Bill(double limitingAmount) {
 		this.limitingAmount = limitingAmount;
 		this.currentDebt = 0;
@@ -15,9 +16,12 @@ public class Bill {
 	double getLimitingAmount() {
 		return limitingAmount;
 	}
-	
+	void changeTheLimit(double amount) {
+		limitingAmount = amount;
+	}
 	//checking if we exceed the limiting amount
 	boolean check(double amount) {
+		currentDebt+=amount;
 		if (currentDebt > limitingAmount) {
 			return false;
 		}
@@ -34,11 +38,18 @@ public class Bill {
 	
 	//paying bills
 	void pay(double amount) {
-		currentDebt -= amount;
+		if (amount>currentDebt) {
+			totalMoneySpent+=currentDebt;
+			currentDebt=0;
+		}
+		else {
+			currentDebt -= amount;
+			totalMoneySpent+=amount;
+		}
 	}
 	
 	// getter method for currentDebt
-	double currentDebt() {
+	double getCurrentDebt() {
 		return currentDebt;
 	}
 	
