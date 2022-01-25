@@ -3,7 +3,6 @@ package question;
 
 public class Bill {
 
-	//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 	private double limitingAmount;
 	private double currentDebt;
 	double totalMoneySpent = 0;
@@ -12,13 +11,13 @@ public class Bill {
 		this.currentDebt = 0;
 	}
 	
-	//Getter method for limitingAmount
 	double getLimitingAmount() {
 		return limitingAmount;
 	}
 	void changeTheLimit(double amount) {
 		limitingAmount = amount;
 	}
+	
 	//checking if we exceed the limiting amount
 	boolean check(double amount) {
 		//if we exceed the limitingAmount return false
@@ -48,13 +47,10 @@ public class Bill {
 		}
 	}
 	
-	// getter method for currentDebt
 	double getCurrentDebt() {
 		return currentDebt;
 	}
 	
 
-
-	//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 }
 
