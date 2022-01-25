@@ -39,7 +39,6 @@ public class Main {
 		customers = new Customer[C];
 		operators = new Operator[O];
 
-		//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 		PrintStream outstream1;
 		try {
 			outstream1 = new PrintStream(outFile);
@@ -47,12 +46,11 @@ public class Main {
 			e2.printStackTrace();
 			return;
 		}
-		//just an empty line
 		
+		//just an empty line
 		String emptyLine = reader.nextLine();
 		
 		//creating operators and customers
-		
 		int operatorIndex = 0;
 		int customerIndex = 0;
 		for(int lines = 0; lines < C+O ; lines++) {
@@ -72,8 +70,7 @@ public class Main {
 			
 		}
 		
-		//actions that customers take
-		
+		//actions
 		for(int actionLines = 0; actionLines < N-(C+O);actionLines++) {
 			String actionLine = reader.nextLine();
 			String actionLineArray[];
@@ -154,8 +151,6 @@ public class Main {
 		outstream1.println();
 		outstream1.print(maxInternet.name + " " + ":" + " ");
 		outstream1.printf("%.2f", maxInternetUsage);
-		
-		//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 	}
 }
 
