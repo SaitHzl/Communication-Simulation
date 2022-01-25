@@ -3,8 +3,6 @@ package question;
 
 public class Customer {
 	
-	//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
-	
 	private int ID;
 	String name;
 	private int age;
@@ -23,6 +21,7 @@ public class Customer {
 	}
 		
 	//Actions that a customer can take
+	
 	void talk(int minute, Customer other) {
 		if((this.bill.check(this.operator.calculateTalkingCost(minute,Customer.this)))) {
 			this.bill.add(this.operator.calculateTalkingCost(minute,Customer.this));
@@ -37,8 +36,8 @@ public class Customer {
 	void message(int quantity, Customer other) {
 		if(this.bill.check(this.operator.calculateMessageCost(quantity, Customer.this, other))) {
 			this.bill.add(this.operator.calculateMessageCost(quantity, Customer.this, other));
-			nOfMessages+=quantity; //customer'In ne kadar mesaj attýðýný depolar
-			this.operator.operatornOfMessagesSent+=quantity; // operator vasýtasýyla kaç mesaj atýldýðýný depolar
+			nOfMessages+=quantity; //customer'In ne kadar mesaj attÃ½Ã°Ã½nÃ½ depolar
+			this.operator.operatornOfMessagesSent+=quantity; // operator vasÃ½tasÃ½yla kaÃ§ mesaj atÃ½ldÃ½Ã°Ã½nÃ½ depolar
 		}
 	
 
@@ -52,31 +51,24 @@ public class Customer {
 		
 	}
 	
-	//getter method for age
 	int getAge() {
 		return age;
 	}
-	//setter method for age
 	public void setAge(int age) {
 		this.age = age;
 	}
-	//getter method for operator
 	public Operator getOperator() {
 		return operator;
 	}
-	//setter method for operator
 	public void setOperator(Operator operator) {
 		this.operator = operator;
 	}
-	//getter method for bill
 	public Bill getBill() {
 		return bill;
 	}
-	//setter method for Bill
 	public void setBill(Bill bill) {
 		this.bill = bill;
 	}
 	
-	//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 }
 
