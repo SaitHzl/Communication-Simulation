@@ -2,7 +2,6 @@
 package question;
 
 public class Operator {
-	//DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 	
 	private int ID;
 	private double talkingCharge;
@@ -70,7 +69,6 @@ public class Operator {
 	public void setDiscountRate(int discountRate) {
 		this.discountRate = discountRate;
 	}
-	
-	//DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+
 }
 
